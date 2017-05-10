@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Medici.aspx.cs" Inherits="WebAppMed3.Medici" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Certificati.aspx.cs" Inherits="WebAppMed3.Certificati" %>
 
 <!DOCTYPE html>
 
@@ -29,42 +29,42 @@
     <!--#include file="templates/menu.tpl"-->
     
     <section class="container content-container">
-        <h3>Tabella Medici</h3>
+        <h3>Tabella Certificati</h3>
         <div class="table-wrapper col-md-12">
-            <table id="Medici" class="table">
+            <table id="Certificati" class="table">
                 <thead>
                     <tr>
-                        <th>Nome</th>
-                        <th>Cognome</th>
-                        <th>Data di nascita</th>
-                        <th>Luogo di nascita</th>
-                        <th>Codice fiscale</th>
-                        <th>Residenza</th>
-                        <th>Provincia</th>
-                        <th>Indirizzo</th>
-                        <th>Telefono</th>
-                        <th>Mobile</th>
-                        <th>Email</th>
-                        <th>Codice albo</th>
+                        <th>Codice paziente</th>
                         <th>Codice medico</th>
+                        <th>Data Emissione</th>
+                        <th>Codice Patologia</th>
+                        <th>Data Inizio</th>
+                        <th>Data Fine</th>
+                        <th>Note</th>
+                        <th>Tipologia</th>
+                        <th>Domicilio</th>
+                        <th>Indirizzo</th>
+                        <th>Comune</th>
+                        <th>Provincia</th>
+                        <th>CAP</th>
 
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Nome</th>
-                        <th>Cognome</th>
-                        <th>Data di nascita</th>
-                        <th>Luogo di nascita</th>
-                        <th>Codice fiscale</th>
-                        <th>Residenza</th>
-                        <th>Provincia</th>
-                        <th>Indirizzo</th>
-                        <th>Telefono</th>
-                        <th>Mobile</th>
-                        <th>Email</th>
-                        <th>Codice albo</th>
+                        <th>Codice paziente</th>
                         <th>Codice medico</th>
+                        <th>Data Emissione</th>
+                        <th>Codice Patologia</th>
+                        <th>Data Inizio</th>
+                        <th>Data Fine</th>
+                        <th>Note</th>
+                        <th>Tipologia</th>
+                        <th>Domicilio</th>
+                        <th>Indirizzo</th>
+                        <th>Comune</th>
+                        <th>Provincia</th>
+                        <th>CAP</th>
                     </tr>
                 </tfoot>
             </table>
@@ -76,7 +76,7 @@
    <script type="text/javascript">
        //var dataset = PatologieApiClienti.getApi();
        $(document).ready(function () {
-           $("table#Medici").DataTable({
+           $("table#Certificati").DataTable({
                //"ajax":"test/patologie.json"
                //data:dataset
            });

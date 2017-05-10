@@ -84,6 +84,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Certificati.aspx" />
     <Content Include="Global.asax" />
     <Content Include="css\custom.css" />
     <Content Include="css\theme.css" />
@@ -124,14 +125,33 @@
     <None Include="templates\menu.tpl">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Pazienti.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Certificati.aspx.cs">
+      <DependentUpon>Certificati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Certificati.aspx.designer.cs">
+      <DependentUpon>Certificati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Certificato.cs" />
+    <Compile Include="Medico.cs" />
+    <Compile Include="Patologia.cs" />
     <Compile Include="PatologieApiClient.cs" />
     <Compile Include="PatologieData.cs" />
+    <Compile Include="Paziente.cs" />
+    <Compile Include="Pazienti.aspx.cs">
+      <DependentUpon>Pazienti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pazienti.aspx.designer.cs">
+      <DependentUpon>Pazienti.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PazientiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
